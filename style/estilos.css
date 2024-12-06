@@ -1,0 +1,245 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2; /* Fondo gris claro */
+            align-items: center;
+        }
+
+        h1 {
+            color: #214a8b;
+        }
+
+        /* Estilos para el menú lateral */
+        .sidebar {
+            width: 200px; /* Ancho del menú lateral */
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            overflow: hidden;
+            transition: 0.3s;
+            padding-top: 10px;
+            color: white;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li a {
+            display: block;
+            padding: 15px 0;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            transition: 0.3s;
+        }
+
+        .sidebar li a:hover {
+            background-color: #dd443d; 
+        }
+
+        .sidebar.active {
+            width: 100px; /* Ancho reducido cuando está activo */
+        }
+
+        .sidebar ul li {
+            padding: 10px;
+        }
+
+        .sidebar ul li a {
+            color: #dd443d;
+            text-decoration: none;
+        }
+
+        /* Estilos para el contenido de la página */
+        .contenido {
+            margin-left: 200px; /* Alineado al menú lateral */
+            padding: 20px;
+            background-color: white; /* Fondo blanco */
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilos para la cabecera */
+        .cabecera {
+            margin-left: 200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: left;
+            background-color: #dd443d;
+            padding: 10px;
+            color: white;
+        }
+
+        .user-image {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        .usuario-info {
+            font-weight: bold;
+        }
+
+        .menu-desplegable {
+            position: center;
+            vertical-align: middle;
+        }
+
+        .menu-desplegable > a {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+.menu-contenido {
+    display: none;
+    position: absolute;
+    background-color: #dd443d;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Estilos para los enlaces dentro de .menu-contenido */
+.menu-contenido a {
+    color: white; /* Hacer que el texto de los enlaces sea blanco */
+    text-decoration: none; /* Remover el subrayado */
+    display: block; /* Hacer que el enlace ocupe todo el ancho disponible */
+    padding: 12px 16px; /* Añadir padding */
+}
+
+/* Cambiar el color de fondo a gris al pasar el mouse */
+.menu-contenido a:hover {
+    background-color: grey; /* Color de fondo al pasar el mouse */
+    text-decoration: none; /* Remover el subrayado */
+}
+
+
+        .menu-desplegable:hover .menu-contenido {
+            display: block;
+        }
+
+        
+
+        /* Estilos de los enlaces */
+        a {
+            color: green;
+            text-decoration: none;
+            display: inline-block;
+            padding: 4px 8px;
+            background-color: #214a8b;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            background-color: #214a8b;
+            transform: scale(1.05);
+
+        }
+     
+        /* Estilos de los botones */
+        button {
+            background-color: #214a8b;
+            border: 5px;
+            border-radius: 25px;
+
+        }
+
+        button:hover {
+            background-color: #dd443d;
+            transform: scale(1.05);
+        }
+
+        .boton {
+            display: inline-block;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            background-color: #214a8b;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .boton:hover {
+            background-color: #dd443d;
+            transform: scale(1.05);
+        }
+
+        .boton-enlace {
+            display: inline-block;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            background-color: #214a8b;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .boton-enlace:hover {
+            background-color: #dd443d;
+            transform: scale(1.05);
+        }
+
+        /* Estilos para las tablas */
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            border: none;
+            margin: 10px 0;
+        }
+
+        table td {
+            padding: 2px;
+            border: 1px solid transparent;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 4px;
+        }
+
+        th {
+            background-color: #214a8b;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: lightgray;
+        }
+    .alert-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 128, 0, 0.5); /* Fondo verde claro */
+        z-index: 999; /* Asegura que esté encima de todo */
+    }
+    .alert-box {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 24px; /* Tamaño grande de fuente */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
